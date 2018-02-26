@@ -1,0 +1,33 @@
+body
+{
+
+	/*background: tomato;*/
+	/*background: pink;*/
+	/*background: rgba(255,0,255,.1);*/
+	background: #A9CCFF;
+	color: black;
+}
+
+header
+{
+	border: 10px solid tomato;
+	text-align: center;
+}
+
+header nav ul li
+{
+	background: rgba(255,0,255,.2);
+	border: 1px solid green;
+	border-radius: 5px;
+	display: inline-block;
+	width: 90px;
+}
+
+header nav ul li:hover
+{
+	background: rgba(255,0,255,.5);
+	border: 1px solid green;
+	border-radius: 5px;
+	display: inline-block;
+	width: 90px;
+}
