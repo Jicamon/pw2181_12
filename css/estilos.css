@@ -11,6 +11,7 @@ body
 header
 {
 	border: 10px solid tomato;
+	/*margin-bottom: 20px;*/
 	text-align: center;
 }
 
@@ -19,8 +20,20 @@ header nav ul li
 	background: rgba(255,0,255,.2);
 	border: 1px solid green;
 	border-radius: 5px;
+
 	display: inline-block;
+	
+	margin-right: 20px;
+	/*margin: 0px 20px 0px 0px;*/
+	padding: 10px 20px;
+
 	width: 90px;
+	
+	/*padding: 5px 10px;*/
+	/*padding: 5px 10px 8px 2px;*/
+	/*margin: 40px;*/
+	/*margin: 5px 10px;*/
+	/*margin: 5px 10px 8px 2px;*/
 }
 
 header nav ul li:hover
@@ -28,6 +41,31 @@ header nav ul li:hover
 	background: rgba(255,0,255,.5);
 	border: 1px solid green;
 	border-radius: 5px;
+	
 	display: inline-block;
+
+	padding: 10px 20px;
+
 	width: 90px;
+}
+
+footer
+{
+	border: 2px solid orange;
+	font-weight: bold; /* Negritas */
+	padding: 50px;
+	text-align: center;
+}
+
+main
+{
+	margin-top: 20px;
+}
+
+main article
+{
+	border: 2px dashed brown;
+	display: inline-block;
+	vertical-align: top;
+	width: 32.65%;
 }
