@@ -7,7 +7,7 @@ body{
 
 header{
 	background: lightpink;
-	
+	margin-bottom: 10px;
 
 }
 
@@ -19,9 +19,22 @@ header nav{
 	width: 99.9%;
 }
 
+
 header nav form{
+	margin-right: 20px;
 	margin-top: -37px;
 	float: right;
+}
+
+header nav form input{
+	border-radius: 5px; 
+}
+
+header nav form input[type="button"]{
+	background: green;
+	border-color: green;
+	color: white;
+
 }
 
 header nav ul li{
@@ -31,8 +44,20 @@ header nav ul li{
 	margin-top: 2px;
 }
 
+#seccion01{
+	margin-top: 10px;
+}
 
+#seccion01 article{
 
+	text-align: center;
+
+}
+
+#seccion01 article img{
+	border: 5px solid rgba(50,50,50,.5);
+	width: 98%;
+}
 
 #logo{
 	margin-top: -150px;
