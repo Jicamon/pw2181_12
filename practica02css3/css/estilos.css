@@ -78,8 +78,40 @@ header nav ul li{
 	padding-right: 122px;
 }
 
+#terceraseccion article{
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: top;
+	width: 23%;
+}
+
+#terceraseccion article img{
+	/*Alineacion vertical de la imagen */
+	vertical-align: middle;
+
+}
+
+
+
+#terceraseccion article input[type="button"]{
+	background-color: lightgreen;
+	color: white;
+}
+
+#terceraseccion article input{
+	border-radius: 5px;
+}
+
+.colorazul{
+	color: #629AD4;
+}
+
 .colorrosa{
 	color: #FF0099;
+}
+
+.colorverde{
+	color: #8BC500;
 }
 
 .nito{
@@ -93,3 +125,4 @@ header nav ul li{
 .letragrande{
 	font-size: 3.5em;
 }
+
