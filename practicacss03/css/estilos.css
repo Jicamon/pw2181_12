@@ -1,0 +1,50 @@
+body{
+	font-size: 16px;
+	color: white;
+	margin: 0px auto;
+	max-width: 1078px;
+	min-width: 1078px;
+	background: #2B2B2B;
+}
+
+header input {
+
+}
+
+article{
+	border: 1px solid tomato;
+}
+
+#seccVerde{
+	background-color: #BAD65C;
+}
+
+#seccGris{
+	background-color: #545454;
+}
+
+#seccRojo{
+	background-color: #d52e3f; 
+}
+
+#seccBlanco{
+	background-color: #e4e4e4; 
+}
+
+.colorblanco{
+	color: white;
+}
+
+
+.colorgris{
+	color: gray;
+}
+
+.colorLgris{
+	color: lightgray;
+}
+
+.nito{
+	font-weight: bold;
+}
+
