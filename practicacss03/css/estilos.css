@@ -7,8 +7,18 @@ body{
 	background: #2B2B2B;
 }
 
-header input {
 
+header{
+	
+
+}
+
+header img{
+	max-width: 1000px;
+}
+
+header input {
+	float: left;
 }
 
 article{
