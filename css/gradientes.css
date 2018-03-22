@@ -1,0 +1,100 @@
+article{
+	border-radius: 5px;
+	border: 1px solid tomato;
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+}
+
+
+
+#uno{
+	/*Si no soporta Gradientes*/
+	background: tomato;
+	/*Opera*/
+	background: -o-linear-gradient(rgba(0,0,255,1),rgba(255,0,255,1));
+	/*Safari*/
+	background: -webkit-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));
+	/*Firefox*/
+	background: -moz-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));
+	/*Internet Explorer - Edge*/
+	background: -ms-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));
+	/*Para todos los Navegadores*/
+	background: linear-gradient(tomato, purple);
+}
+
+
+
+#dos{
+	/*Si no soporta Gradientes*/
+	background: tomato;
+	/*Opera*/
+	background: -o-linear-gradient(to left, tomato, purple);
+		/*Safari*/
+	background: -webkit-linear-gradient(to left, tomato, purple);
+
+	/*Firefox*/
+	background: -moz-linear-gradient(to left, tomato, purple);
+
+	/*Internet Explorer - Edge*/
+	background: -ms-linear-gradient(to left, tomato, purple);
+
+	/*Para todos los Navegadores*/
+	background: linear-gradient(to left, tomato, purple);
+}
+
+#tres{
+	/*Si no soporta Gradientes*/
+	background: tomato;
+	/*Opera*/
+	background: -o-linear-gradient(to right, tomato, purple);
+		/*Safari*/
+	background: -webkit-linear-gradient(to right, tomato, purple);
+
+	/*Firefox*/
+	background: -moz-linear-gradient(to right, tomato, purple);
+
+	/*Internet Explorer - Edge*/
+	background: -ms-linear-gradient(to right, tomato, purple);
+
+	/*Para todos los Navegadores*/
+	background: linear-gradient(to right, tomato, purple);
+}
+
+#cuatro{
+	/*Si no soporta Gradientes*/
+	background: tomato;
+	/*Opera*/
+	background: -o-linear-gradient(to right bottom, tomato, purple);
+		/*Safari*/
+	background: -webkit-linear-gradient(to right bottom, tomato, purple);
+
+	/*Firefox*/
+	background: -moz-linear-gradient(to right bottom, tomato, purple);
+
+	/*Internet Explorer - Edge*/
+	background: -ms-linear-gradient(to right bottom, tomato, purple);
+
+	/*Para todos los Navegadores*/
+	background: linear-gradient(to right bottom, tomato, purple);
+}
+
+
+#cinco{
+	/*Si no soporta Gradientes*/
+	background: tomato;
+	/*Opera*/
+	background: -o-linear-gradient(to left bottom, tomato, purple);
+		/*Safari*/
+	background: -webkit-linear-gradient(to left bottom, tomato, purple);
+
+	/*Firefox*/
+	background: -moz-linear-gradient(to left bottom, tomato, purple);
+
+	/*Internet Explorer - Edge*/
+	background: -ms-linear-gradient(to left bottom, tomato, purple);
+
+	/*Para todos los Navegadores*/
+	background: linear-gradient(to left bottom, tomato, purple);
+}
+

@@ -1,0 +1,34 @@
+article{
+	background: lightpink;
+	border: 2px solid lightblue;
+	color: black;
+	margin: 20px 5px;
+	padding: 15px;
+	text-align: center;
+	-o-transition: all 5s linear;
+	-webkit-transition: all 5s linear;
+	-ms-transition: all 5s linear;
+	-moz-transition: all 5s linear;
+	transition: all 10s linear;
+	width: 400px;	
+}
+
+article p{
+	font: 30px Tahoma;
+	font-weight: bold;
+	width: 100%
+}
+
+article:hover{
+	background: black;
+	color: lightpink;
+	-o-transform: translate(150px, 300px);
+	-webkit-transform: translate(150px, 300px);
+	-ms-transform: translate(150px, 300px);
+	-moz-transform: translate(150px, 300px);
+	transform: translate(150px, 300px);
+}
+/*article:hover{
+	height: 700px;
+	width: 800px;
+}*/
