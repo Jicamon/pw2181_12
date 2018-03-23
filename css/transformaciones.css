@@ -5,11 +5,11 @@ article{
 	margin: 20px 5px;
 	padding: 15px;
 	text-align: center;
-	-o-transition: all 5s linear;
-	-webkit-transition: all 5s linear;
-	-ms-transition: all 5s linear;
-	-moz-transition: all 5s linear;
-	transition: all 10s linear;
+	-o-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	transition: all 1s linear;
 	width: 400px;	
 }
 
@@ -27,6 +27,40 @@ article:hover{
 	-ms-transform: translate(150px, 300px);
 	-moz-transform: translate(150px, 300px);
 	transform: translate(150px, 300px);
+}
+
+article:hover{
+	background: black;
+	color: lightpink;
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+}
+
+article:hover{
+	background: black;
+	color: lightpink;
+	-o-transform:scale(2.5);
+	-ms-transform:scale(2.5);
+	-webkit-transform:scale(2.5);
+	-moz-transform:scale(2.5);
+	transform:scale(2.5);
+
+}
+
+
+article:hover{
+	background: black;
+	color: lightpink;
+	-o-transform: skew(-10deg,100deg);
+	-ms-transform: skew(-10deg,100deg);
+	-webkit-transform:  skew(-10deg,100deg)
+	-moz-transform: skew(-10deg,100deg);
+	transform:  skew(-10deg,100deg);
+
 }
 /*article:hover{
 	height: 700px;

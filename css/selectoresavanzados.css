@@ -1,0 +1,84 @@
+/*Imagen con atributo alt;*/
+img[alt]{
+	border: 5px solid tomato;
+}
+
+/*Imagen con cadena EXACTA*/
+img[src="img/nanachi.jpg"]{
+	width: 50%;
+}
+
+/*Imagen con atributo SRC con el inicio de la cadena*/
+img[src^="img"]{
+	border: 50px solid lightblue;
+}
+
+/*Imagen con atributo SRC con el final de la cadena*/
+img[src$="jpg"]{
+	border: 10px solid lightyellow;
+}
+
+/*Imagen con atributo SRC en cualquier parte de la cadena*/
+img[src*="ana"]{
+	border: 42px solid lightgreen;
+}
+
+/*El caracter "~" indica que estos selectores*/
+/*estan separados por espacios*/
+article[class~="resaltado"]{
+	border: 5px dashed lightgray;
+}
+
+article[class~="archivo"]{
+	border: 5px dashed brown;
+}
+
+article[class~="ingles"]{
+	border: 5px dashed lime;
+}
+
+
+/*
+El atributo Class/Id es una lista de
+valoress separado por guiones */
+article[class|="ingles"]{
+	font-weight: bold;
+}
+
+/*Selector de secundarios.
+Selecciona solamente las que se 
+encuentran inmediatamente despues 
+del <div>*/
+
+/*Solo hijos directos de Div*/
+div > p {
+	font-weight: bold;
+	color: blue;
+}
+/*
+Todos los elementos <p> seran
+seleccionados*/
+
+div p{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
