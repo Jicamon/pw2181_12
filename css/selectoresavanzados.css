@@ -62,14 +62,51 @@ seleccionados*/
 div p{
 	color: red;
 }
+/*Seleccionar dolo el elemento <p> 
+que esta inmediatamente despues del
+elemento <h2> - Hermano adyacente*/
+h2 + p{
+	color: green;
+}
 
+/*Seleccionar todos los elementos <p>
+del elemento especificado - Hermano General*/
+h2 ~ p{
+	color: rgba(255,0,150,1);
+}
+/*Poner en color verde el texto de las secciones menos el
+id="Referencias"*/
+#Resumen,#Experimento,#Pruebas,#Resultados,#Conclusiones{
+	color: green;
+}
 
+/*Poner en color rosa el texto de las secciones menos el
+id="Referencias"*/
+section:not(#Referencias){
+	color: hotpink;
+}
 
+li:nth-child(odd){/*Impares*/	
+	color: tomato;
+}
 
+li:nth-child(even){/*Pares*/
+	color: yellow;
+}
 
+li:nth-child(7){ /*N elemento*/
+	color: gray;
+}
 
+li:nth-last-child(2){ /*N Elemento de abajo hacia arriba*/
 
+	font-weight: bold;
+	color:purple;
+}
 
+p:first-line{
+	font-weight: bold;
+}
 
 
 
