@@ -1,0 +1,65 @@
+JavaScript
+1.- Es distinto a JAVA.
+2.- Comparte sintaxis con JAVA.
+3.- No es tipado.
+4.- Comportamiento de los objetros dentro de la pagina.
+5.- Si, es un lenguaje de programacion.
+
+var a,b = 6;
+undefined
+a = 5;
+5
+var c = a + b;
+undefined
+var respuesta = prompt('Dame un numero',0);
+undefined
+function suma(a,b){return a + b;}
+undefined
+suma
+ƒ suma(a,b){return a + b;}
+suma(1,2);
+3
+var sumaNumeros = function(a,b){return a + b;}
+undefined
+sumaNumeros
+ƒ (a,b){return a + b;}
+sumaNumeros(6,6);
+12
+
+document.write("BREINM");
+undefined
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('demo');
+<article id=​"demo">​</article>​
+document.getElementById('frame');
+null
+document.getElementById('slide');
+null
+document.getElementById('meme');
+null
+document.getElementById('dickbutt');
+null
+document.write("<article id='demo'>Memes</article>");
+undefined
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('dickbutt').innerHTML="Mergas";
+
+document.getElementById('demo').innerHTML="Mergas";
+"Mergas"
+document.write("<input type = 'text' id='txt'>");
+undefined
+document.getElementById('txt').value=72;
+72
+console.log("Escribimos en la consola del navegador pendejazo");
+VM571:1 Escribimos en la consola del navegador pendejazo
+undefined
+console.log("421");
+VM572:1 421
+undefined
+document.write("<button>Da Clic</button>");
+undefined
+
+document.write("<button onclick=alert('MEVALEVERGAPERRRRRO')> ALAVERGAPERRROO</button>");
+undefined
