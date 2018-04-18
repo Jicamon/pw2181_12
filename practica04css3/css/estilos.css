@@ -1,0 +1,114 @@
+body{
+	margin:0 auto;
+	max-width: 1078px;
+	min-width: 1078px;
+}
+
+
+footer article{
+	
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+footer article span{ 
+
+ 	border-bottom: 3px solid #DBDCE0;
+	display: inline-block;
+	margin-right: 15px; 
+	padding-bottom: 2px;
+}
+
+header{
+	border-bottom: 2px dashed gray;
+}
+
+header nav ul li{
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 15px; 
+	padding-bottom: 20px;
+}
+
+header nav ul li:nth-child(1){
+	margin-left: -35px;
+}
+
+footer li{
+	list-style: none;
+}
+	
+#years{
+	float: right;
+	position: relative;
+	left: 140px;
+	bottom: 70px;
+}
+
+#baica{
+
+	margin-top: -440px;
+	float: right;
+	height: 460px;
+	width: 480px; 
+
+}
+
+#buy{
+	float: right;
+	margin-top: 100px;
+	width: 60px;
+}
+
+#cir{
+
+	width: 35px;
+	margin-left: 5px;
+	margin-top: 10px;
+	float: right;	
+}
+
+#goto{
+	float: right;
+	margin-top: 40px;
+	width: 200px;
+}
+
+#headline{
+	margin-top: 30px;
+	border-bottom: 2px dashed gray;
+	width: 540px;
+}
+
+#logo{
+	width:190px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+#vid{
+	width: 23%;
+}
+
+#yaquieropasar{
+	display:inline-block;
+}
+
+.letraGigante{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.colorGris{
+	color:gray;
+}
+
+.colorNegro{
+	color: black;
+}
+
+.colorVerde{
+	color: #11E01C;
+}
