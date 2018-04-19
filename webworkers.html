@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>WebWorkers HTML5</title>
+</head>
+<body>
+	
+	<p>Contar Numeros <div id="resultado"></div></p>
+	<button onclick="iniciarWorker();">Iniciar</button>
+	<button onclick="pararWorker();">Detener</button>
+
+	<p>Contar Numeros <div id="resultado2"></div></p>
+	<button onclick="iniciarWorker2();">Iniciar</button>
+	<button onclick="pararWorker2();">Detener</button>
+
+
+	<script>
+		
+		var w1,w2;
+		function iniciarWorker(){
+			//Preguntar si soporta Workers.
+			if (typeof(Worker) != "undefined") {
+				if (typeof(w1) == "undefined"){
+					w1 = new Worker("demoWorker.js");
+					w1.onmessage = function(event){
+						document.getElementById('resultado').innerHTML = event.data;
+					}
+				}																																																																													
+			}else{
+				alert("El navegador no soporta Workers");
+			}
+		}
+		function pararWorker(){
+			w1.terminate();
+			w1 = undefined;
+		}
+
+		function iniciarWorker2(){
+			//Preguntar si soporta Workers.
+			if (typeof(Worker) != "undefined") {
+				if (typeof(w2) == "undefined"){
+					w2 = new Worker("demoWorker.js");
+					w2.onmessage = function(event){
+						document.getElementById('resultado2').innerHTML = event.data;
+					}
+				}																																																																													
+			}else{
+				alert("El navegador no soporta Workers");
+			}
+		}
+		function pararWorker2(){
+			w2.terminate();
+			w2 = undefined;
+		}
+
+	</script>
+
+</body>
+</html>
