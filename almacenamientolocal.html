@@ -13,15 +13,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 	<script>
 		//Codigo JavaScript
 
@@ -36,12 +27,14 @@
 			imprime(localStorage.cuenta);
 		}
 
-		var reiniciar = function() {
+		var reiniciar = function() 
+		{
 			localStorage.cuenta = 0;
 			imprime(localStorage.cuenta)		
 		}
 
-		var eliminar = function(){
+		var eliminar = function()
+		{
 			localStorage.removeItem("cuenta");
 			imprime(localStorage.cuenta);
 		}

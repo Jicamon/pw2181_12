@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Gato</title>
+	<link rel="stylesheet" href="css/gato.css">
+</head>
+<body>
+
+	<p>Tiempo Jugador <div id="tiempo"></div></p>
+
+	<button id="1" onclick="marcarCasilla(1); iniciarTiempo();"></button>
+	<button id="2" onclick="marcarCasilla(2); iniciarTiempo();"></button>
+	<button id="3" onclick="marcarCasilla(3); iniciarTiempo();"></button><br>
+	<button id="4" onclick="marcarCasilla(4); iniciarTiempo();"></button>
+	<button id="5" onclick="marcarCasilla(5); iniciarTiempo();"></button>
+	<button id="6" onclick="marcarCasilla(6); iniciarTiempo();"></button><br>
+	<button id="7" onclick="marcarCasilla(7); iniciarTiempo();"></button>
+	<button id="8" onclick="marcarCasilla(8); iniciarTiempo();"></button>
+	<button id="9" onclick="marcarCasilla(9); iniciarTiempo();"></button>
+	
+
+
+	<script>
+		var jugador = true;
+
+		function iniciarTiempo(){
+			//Preguntar si soporta Workers.	
+			if (typeof(Worker) != "undefined") {
+				if (typeof(w1) == "undefined"){
+					w1 = new Worker("gato.js");
+					w1.onmessage = function(event){
+						document.getElementById('tiempo').innerHTML = event.data;
+					}
+				}																																																																													
+			}else{
+				alert("El navegador no soporta Workers");
+			}
+		}
+
+		function imprime(){
+
+		}
+
+		function marcarCasilla(numero){
+			
+
+			if(jugador == true){
+				document.getElementById(numero).innerHTML = "O";
+				jugador = false;
+			}else
+			{
+				document.getElementById(numero).innerHTML = "X";
+				jugador = true;
+			}
+
+		}
+
+
+	</script>
+
+
+	
+</body>
+</html>
