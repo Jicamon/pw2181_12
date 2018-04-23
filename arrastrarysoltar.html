@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrastrar y Soltar</title>
+	<style>
+		#div1, #div2, #div3{
+			float: left;
+			border: 1px solid tomato;
+			height: 250px;
+			padding: 10px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Arrastrar y Soltar</h2>
+	
+
+	<div id="div1" ondragover="allowDrop(event);" ondrop="drop(event);">
+		<img draggable="true" id="arrastre" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre2" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre3" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre4" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre5" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre6" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre7" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre8" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+		<img draggable="true" id="arrastre9" src="img/nanachi.jpg" height="200" width="400" ondragstart="drag(event);">
+	</div>
+	
+		
+		
+	<div id="div2" ondragover="allowDrop(event);" ondrop="drop(event);">	
+
+	</div>
+	<div id="div3" ondragover="allowDrop(event);" ondrop="drop(event);">	
+	</div>
+	
+
+	<script>
+		function allowDrop(event){
+			//Permita que el objeto caiga sobre el evento.preventDefaul();
+			event.preventDefault();			
+		}
+
+		function drag(event){
+			event.dataTransfer.setData("text",event.target.id);	
+		}
+
+		function drop(event){
+			event.preventDefault();
+			var data = event.dataTransfer.getData("text");
+			event.target.appendChild(document.getElementById(data));
+
+		}
+	</script>
+
+</body>
+</html>
