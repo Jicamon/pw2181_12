@@ -18,6 +18,8 @@ function muestraPantallaPrincipal(){
 		protocol: 'file',
 		slashed: true
 	}));
+
+	// PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show();
 }
 
