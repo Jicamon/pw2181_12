@@ -4,6 +4,15 @@ const url = require('url')
 
 let pantallaPrincipal;
 
+//Objeto global para compartir datos entre pantalllas
+global.infoUsuarios = {
+	nombre: '',
+	genero: '',
+	foto: '',
+	direccion: '',
+	telefono: ''
+}
+
 function muestraPantallaPrincipal(){
 	pantallaPrincipal = new BrowserWindow({width:320, height:425});
 	pantallaPrincipal.loadURL(url.format({
