@@ -2,19 +2,32 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Proyecto de Ejemplo ABCC (CRUD)</title>
+	<title>Proyecto ejemplo ABCC (CRUD)</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
-	<script src="js/eventos.js"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+  	<script src="js/eventos.js"></script>
 </head>
 <body>
-	<section id="secInicio">
-		Ingrese sus datos <br>
-		<input type="text" class="form-control" id="txtUsuario" placeholder="Usuario" autofocus>
-		<input type="password" class="form-control" id="txtClave" placeholder="Contraseña">
-		<button id="btnAceptar" class="btn btn-lg btn-primary btn-block">Aceptar</button>
+	<section id = "secInicio">
+		Ingrese sus datos: <br>
+		<input type="text" class="form-control" id= "txtUsuario" placeholder="Usuario" autofocus="" >
+		<input type="password" class="form-control" id= "txtclave" placeholder="Contraseña">
+		<button id="btnAceptar" class="btn btn-primary btn-block">Aceptar</button>
 	</section>
-
-
+	<main>
+		<section id="frmUsuarios">
+			<input type="text" class="form-control" id="txtNombreUsuario" placeholder="Usuario">
+			<input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
+			<input type="password" class="form-control" id="txtClaveUsuario" placeholder="Clave">
+			<button class="btn btn-lg btn-primary">Guardar</button>
+			<button class="btn btn-lg btn-success">Actualizar</button>
+			<button class="btn btn-lg btn-warning">Borrar</button>
+			<button class="btn btn-lg btn-info">Listado</button>
+		</section>
+	</main>
 </body>
 </html>
