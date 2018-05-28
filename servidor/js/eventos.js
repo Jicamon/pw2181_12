@@ -73,6 +73,11 @@ var inicioApp = function(){
 		var usuario = $("#txtNombreUsuario").val();
 		var nombre = $("#txtNombre").val();
 		var clave = $("#txtClaveUsuario").val();
+		var parametros = "opc=guardarusuario"+
+						 "&usuario="+usuario+
+						 "&clave="+clave+
+						 "&nombre="+nombre+
+						 "&aleatorio="+Math.random();
 
 		if (usuario != "" && nombre != "" && clave != "") {
 			$.ajax({
@@ -99,9 +104,21 @@ var inicioApp = function(){
 		}
 	}
 
+	var Borrar = function(){
+		var usuario = $("#txtNombreUsuario").val;
+		var nombre = $("#txtNombre").val;
+		var pregunta = prompt("Esta seguro de querer borrar a: "+nombre+"/ (si/no)", "no");
+
+		if (person != null) {
+		    document.getElementById("demo").innerHTML =
+		    "Hello " + person + "! How are you today?";
+		}
+	}
+
 	$("#btnAceptar").on("click",Aceptar);
 	$("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
 	$("#btnGuardar").on("click",Guardar);
+	$("#btnBorrar").on("click",Borrar)
 
 }
 
